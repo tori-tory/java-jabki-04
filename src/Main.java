@@ -135,7 +135,7 @@ public class Main {
         //int size = array.length;
         int[] resultArray = new int[array.length];
         for (int i = 0; i < array.length; i++) {
-            resultArray[i] = (array[i] < 0) ? Math.abs(array[i]) : array[i];
+            resultArray[i] = Math.abs(array[i]);
         }
         return resultArray;
     }
