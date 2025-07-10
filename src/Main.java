@@ -157,7 +157,9 @@ public class Main {
         int[][] array = new int[3][3];
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
-                array[i][j] = (i == j) ? 1 : 0;
+                if (i == j) {
+                    array[i][j] = 1;
+                }
             }
         }
         return array;
@@ -224,6 +226,7 @@ public class Main {
          int[][] resultArray = new int[a][b];
          for (int i = 0; i < resultArray.length; i++) {
              for (int j = 0; j < resultArray[i].length; j++) {
+                 // для int можно принудительно не заполнять 0
                  resultArray[i][j] = ((i % 2) == 1) && ((j % 2) == 1) ? 0 : 1;
              }
          }
