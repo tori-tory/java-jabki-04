@@ -46,7 +46,9 @@ class MainTest {
     @Test
     public void invertArrayTest() {
         String[] array = new String[] {"a", "b", "c", "d"};
-        //assertArrayEquals(array,Main.invertArray(new String[] {"d", "c", "b", "a"}));
+        String[] outArray = new String[] {"d", "c", "b", "a"};
+        Main.invertArray(array);
+        assertArrayEquals(outArray, array);
     }
 
     @Test

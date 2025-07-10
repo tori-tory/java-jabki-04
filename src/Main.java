@@ -132,7 +132,6 @@ public class Main {
      * - Напишите метод, который заменяет все отрицательные числа в массиве на их абсолютные значения.
      */
     static int[] absNegative(int[] array) {
-        //int size = array.length;
         int[] resultArray = new int[array.length];
         for (int i = 0; i < array.length; i++) {
             resultArray[i] = Math.abs(array[i]);
@@ -187,9 +186,8 @@ public class Main {
      * - Реализуйте проверку, является ли двумерный массив квадратным (количество строк = количеству столбцов)
      */
      static boolean isSquareArray(int[][] array) {
-         //boolean result = true;
          for (int i = 0; i < array.length; i++) {
-            if ( array.length != array[i].length) {
+            if (array.length != array[i].length) {
                 return false;
             }
          }
